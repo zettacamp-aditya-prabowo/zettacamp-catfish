@@ -1,3 +1,3 @@
 # zettacamp-catfish
 
-token-github: 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
+token-github: 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
