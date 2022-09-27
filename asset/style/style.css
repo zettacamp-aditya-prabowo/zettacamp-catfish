@@ -1,10 +1,9 @@
 div{
-    max-width:500 px;
+    max-width:auto;
 }
 .background-web{
     background-image: linear-gradient(to right top, #773abb, #684abd, #5b56bd, #5260ba, #4e68b5, #3a6db1, #2b71aa, #2673a1, #017294, #007084, #136d74, #276965);
     border-radius: 25px;
-    width: 100%;
     height: auto;
     background-size: cover;
 	background-attachment: fixed;
@@ -17,7 +16,6 @@ div{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
   }
   
 .text-header{
@@ -84,7 +82,7 @@ div{
   }
   
   
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: auto) {
     .header a {
       float: none;
       display: block;
