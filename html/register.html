@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <link rel="stylesheet" href="../asset/style/style.css" />
+  </head>
+<body>
+    <div class="body">
+        <nav class="navbar" id="myNavbar">
+            <a href="../index.html" class="active">Home </a>
+            <a href="/html/about.html" class="active">About </a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </nav>
+          
+      
+          <section>
+            <hr />
+            <header>
+              <h1 style="text-align: center">Register User</h1>
+            </header>
+            <hr />
+      
+            <main>
+              <div class="container" style="margin-bottom: 100px; ">  
+                  <form action="/action_page.php">
+                      <div class="row">
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="fname">First Name</label>
+                            </div>
+                            <div class="col-75">
+                                <input type="text" id="fname" name="firstname" placeholder="Your First Name.."/>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-25">
+                                <label for="lname">Last Name</label>
+                            </div>
+                            <div class="col-75">
+                                <input type="text" id="lname" name="lastname" placeholder="Your Last Name.."/>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-25">
+                                <label for="gender">Gender</label>
+                            </div>
+                            <div class="col-75">
+                                <div class="row">
+                                    <div class="col-25">
+                                        <input type="radio" id="gender" name="gender" value="male"/>
+                                    </div>
+                                    <div class="col-25">  
+                                        <label for="male">Male</label>
+                                    </div>
+                                    <div class="col-25">
+                                        <input type="radio" id="gender" name="gender" value="female"/>
+                                    </div>
+                                    <div class="col-25">  
+                                        <label for="female">Female</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="birth">Birth</label>
+                            </div>
+                            <div class="col-75">
+                                <input type="date" id="birth" name="birth">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="username">Username</label>
+                            </div>
+                            <div class="col-75">
+                                <input type="text" id="username" name="username" placeholder="Your Username...">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="password">Password</label>
+                            </div>
+                            <div class="col-75">
+                                <input type="password" id="password" name="password" placeholder="Your Password...">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="email">Email</label>
+                            </div>
+                            <div class="col-75">
+                                <input type="email" id="email" name="email" placeholder="Your Email...">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="phone">Number Phone</label>
+                            </div>
+                            <div class="col-75">
+                                <input type="number" id="phone" name="phone" placeholder="Your phone...">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="country">Country</label>
+                            </div>
+                            <div class="col-75">
+                                <select id="country" name="country">
+                                    <option value="australia">Australia</option>
+                                    <option value="canada">Canada</option>
+                                    <option value="canada">Indonesia</option>
+                                    <option value="usa">USA</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="address">Address</label>
+                            </div>
+                            <div class="col-75">
+                                <textarea id="address" name="address" placeholder="Your Address.." style="height: 200px"></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="subject">Image Profil</label>
+                            </div>
+                            <div class="col-75">
+                                <input type="file" name="image" id="image">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <button type="submit"><a href="../html/profile.html">Submit</a></button>
+                        </div>
+                      </div>
+                        
+                  </form>
+              </div>
+            </main>
+          </section>
+          <hr />
+      
+          <footer>
+            <h3 style="text-align: center">&#169; Author By Aditya Bayu Prabowo</h3>
+          </footer>
+      
+    </div>
+</body>
+</html>
