@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Hobbies</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header{
+            text-align: center; 
+            margin-bottom: 10px; 
+            background-color: #161a13; 
+            padding: 30px; 
+            border-radius: 20px;
+            font-size: large;
+            color: #f1f1f1;
+        }
+        .background{
+            background-image: linear-gradient(to right top, #47607f, #435881, #454f82, #4b457f, #55397a);
+        }
+        .grid-container{
+            display: grid;
+            border-radius: 25px;
+            justify-content: start;
+            width: 100%;
+            grid-template-columns: auto auto auto auto;
+            gap: 50px;
+            
+        }
+
+        .grid-container-column{
+            border-radius: 25px;
+            background-color: #f1f1f1;
+            padding: 20px;
+            width: 100%;
+            text-align: center;
+            margin: 30px ;
+            font-size: 30px;
+        }
+
+
+        table{
+            width: 100%;
+            justify-content: center;
+            border-collapse: collapse;
+        }
+
+        tr, th, td{
+            border-radius: 25px;
+            border: 3px #161a13 solid ;
+        }
+
+
+        .table-hobby{
+            background-color: green;
+
+        }
+
+        .table-favorit-movies{
+            background-color: red;
+        }
+
+        .table-favorit-song{
+            background-color: blue;
+        }
+
+        .center-content{
+            justify-content: center;
+        }
+
+    </style>
+</head>
+<body >
+    <header>
+        <hr>
+        <h1>My Profile</h1>
+        <hr>
+    </header>
+    <main class="background">
+        <div class="grid-container">
+            <div class="grid-container-column">
+                <header>
+                    <h2>My Hobbies</h2>
+                </header>
+                <table>
+                    <tr>
+                        <th>Name</th>
+                    </tr>
+                    <tr class="table-hobby">
+                        <td>Football</td>
+                    </tr>
+                    <tr>
+                        <td>Jogging</td>
+                    </tr>
+                    <tr>
+                        <td>Gamers</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="grid-container-column">
+                <header>
+                    <h2>My Favorite Movies</h2>
+                </header>
+                <table>
+                    <tr>
+                        <th>Title</th>
+                        <th>User Rating</th>
+                        <th> Runtime </th>
+                        <th> Release</th>
+                        <th> Description</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="asset/img/spiderman_no_way_home.jpg" alt="spiderman_no_way_home" width="100">
+                            <br>    
+                            Spiderman : No Way Home
+                        </td>
+                        <td>8.3</td>
+                        <td> 140 Minutes</td>
+                        <td>2021</td>
+                        <td>With Spider-Man's identity now revealed, Peter asks Doctor Strange for help. When a spell goes wrong, dangerous foes from other worlds start to appear, forcing Peter to discover what it truly means to be Spider-Man.</td>
+                    </tr>
+                    <tr class="table-favorit-movies">
+                        <td>
+                            <img src="asset/img/dune.jpg" alt="dune" width="100">
+                            <br>    
+                            Dune
+                        </td>
+                        <td>8.0</td>
+                        <td> 155 Minutes</td>
+                        <td>2021</td>
+                        <td>A noble family becomes embroiled in a war for control over the galaxy's most valuable asset while its heir becomes troubled by visions of a dark future.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="asset/img/phone.jpg" alt="the_black_phone" width="100">
+                            <br>    
+                            The Black Phone
+                        </td>
+                        <td>7.0</td>
+                        <td> 103 Minutes</td>
+                        <td>2021</td>
+                        <td>After being abducted by a child killer and locked in a soundproof basement, a 13-year-old boy starts receiving calls on a disconnected phone from the killer's previous victims.</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="grid-container center-content">
+            <div class="grid-container-column">
+                <header>
+                    <h2>My Favorite Song</h2>
+                </header>
+                <table>
+                    <tr>
+                        <th>Title</th>
+                        <th>Singer</th>
+                        <th> Release</th>
+                        <th> Audio Player</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="asset/img/songlist1.jpg" alt="rumah_singgah" width="100">
+                            <br>    
+                            Rumah Singgah
+                        </td>
+                        <td>Fabio Asher</td>
+                        <td>2021</td>
+                        <td><audio src="" controls></audio></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="asset/img/jika_nanti.jpeg" alt="jika_nanti" width="100">
+                            <br>    
+                           Jika Nanti
+                        </td>
+                        <td>Samsons</td>
+                        <td>2020</td>
+                        <td><audio src="" controls></audio></td>
+                    </tr>
+                    <tr class="table-favorit-song">
+                        <td>
+                            <img src="asset/img/manusia-bodoh.jpeg" alt="manusia-bodoh" width="100">
+                            <br>    
+                           Manusia Bodoh
+                        </td>
+                        <td>Ada Band</td>
+                        <td>2020</td>
+                        <td><audio src="" controls></audio></td>
+                    </tr>
+                </table>
+            </div>
+        </divci>
+    </main>
+    
+</body>
+</html>
