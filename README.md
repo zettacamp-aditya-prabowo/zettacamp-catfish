@@ -1,12 +1,10 @@
-## CSS Day 1
+## CSS Day 2
 
-* CSS Introduction. Watch CSS Course Section 1, Part 1 - 11 : https://www.udemy.com/course/css-the-complete-guide-incl-flexbox-grid-sass/learn/lecture/9429312#overview
-* Setup Tool : Either using Visual Studio Code or Bracket for IDE. 
-* Understanding Different CSS Styles. Read Source : https://www.geeksforgeeks.org/types-of-css-cascading-style-sheet/ and Watch CSS Course Section 2, Part 14 - 15 : https://www.udemy.com/course/css-the-complete-guide-incl-flexbox-grid-sass/learn/lecture/9429358#overview
-* Understanding Stylesheet Import into HTML. Watch CSS Course Section 2, Part 16 : https://www.udemy.com/course/css-the-complete-guide-incl-flexbox-grid-sass/learn/lecture/9429366#overview
-* CSS Syntax. Read Source : https://www.w3schools.com/css/css_syntax.asp 
-* CSS Selectors. Watch CSS Course Section 2, Part 17 : https://www.udemy.com/course/css-the-complete-guide-incl-flexbox-grid-sass/learn/lecture/9429374#overview
-
+1. "CSS Concept : Cascading and Inheritance. Watch CSS Course Section 2, Part 18 - 19 : link 
+2. CSS Combinators. Watch CSS Course Section 2, Part 20 - 21 :link and Read Source :link 
+3. CSS Properties and Values. Watch CSS Course Section 2, Part 22: link 
+4. CSS Box Model, Margin, Border, and Padding. Watch CSS Course Section 3, Part 26 - 29: link 
+5. CSS Shorthand properties. Watch CSS Course Section 3, Part 30 - 31: link "
 
 # Material
 1. what is css?
@@ -15,17 +13,10 @@
 
 # Task
 
-1. Project 1 : Inline Styling
-   * Create UI for Superhero Profile. It has to have : 
-        - Hero Name, big font size and red color.
-        - Debut Date, normal text.
-        - Superpower, normal text with green color.
-        - Styling the Profile with inline styling.
-2. Project 2 : Embedded Styling
-    * Create UI for Multiple Tables. Table Hobby, Table Favorites Movies, And Table Favorites Song. The First row of the First Table has Green Background, the second row of Second table has Red background, and the third row of Third table has a blue background.
-3. Project 3 : External Styling
-    * Create Your biography. Simply have your name, age, and then description of yourselves. The description should have : 
-        - At least 2 paragraphs
-        - At least 2 span in each paragraph, the first span of each paragraph should have a bigger size than the second span.
-
-
+1. "Create HTML + CSS Project. With :
+- Title and Paragraph above the cards
+- Below the Paragraph, add 4 cards, in the same line.
+- Inside each card, there will be picture, title of the card, and paragraph of the card
+- Styling the parents with * to change the default color of the text and font
+- Styling the title of the card using Combinators
+- Styling the margin, border, and padding of the card using CSS Shorthand."
