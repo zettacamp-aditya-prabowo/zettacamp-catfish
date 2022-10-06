@@ -30,9 +30,8 @@ p::first-line{
     border: solid 3px black;
 }
 
-body :not(div, ul, li, p){
+body :not(div, p){
     align-items: center;
-    text-decoration: underline;
 }
 
 h1,h2{
