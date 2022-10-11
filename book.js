@@ -1,5 +1,7 @@
 var book=["Ammount_of_discount","Price_after_discount","Amount_of_tax","Price_after_tax"]
 
+var name_book=["Sikancil","Peterpan","Spongebob"]
+
 let amount_of_discount;
 amount_of_discount= 0.5;
 
@@ -27,16 +29,33 @@ function tax(price_after_discount,amount_of_tax){
     return price_after_discount*amount_of_tax;
 }
 
-let price_after_tax= after_tax(price_after_discount,amount_tax)
 
-function after_tax(price_after_discount,amount_tax){
+if (price_after_discount<10000) {
+    var price_after_tax= after_tax(price_after_discount,amount_tax)
+
+    function after_tax(price_after_discount,amount_tax){
     return price_after_discount+amount_tax;
+    }
+    // console.log(book[3],price_after_tax)
+} else {
+    console.log (book[3],price_after_discount)
+}
+
+var amount_of_book=2
+
+for(let i=0; i<1; i++){
+    if (ammount_of_book=0 ){
+        document.write("Purchasing again")
+    } else {
+        document.write("Not Purchasing ")
+    }
+
 }
 
 console.log(book)
 console.log(book[0],amount_of_discount)
 console.log("Ammount Discount ", discount)
-console.log(book[1],price_after_discount)
+// console.log(book[1],price_after_discount)
 console.log(book[3],price_after_tax)
 
 
