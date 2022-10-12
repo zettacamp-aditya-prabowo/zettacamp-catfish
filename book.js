@@ -45,9 +45,9 @@ var amount_of_book=2
 
 for(let i=0; i<1; i++){
     if (ammount_of_book=0 ){
-        document.write("Purchasing again")
+        console.log("Purchasing again")
     } else {
-        document.write("Not Purchasing ")
+        console.log("Not Purchasing ")
     }
 
 }
