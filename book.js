@@ -1,61 +1,70 @@
-var book=["Ammount_of_discount","Price_after_discount","Amount_of_tax","Price_after_tax"]
+var book={ pulpen:{name: "standart"},
+    name:"Sikancil",
+    author:"David",
+    year:"2001",
+    price:200000
+}
 
-var name_book=["Sikancil","Peterpan","Spongebob"]
+var list_book=[{
+        name:"Sikancil",
+        author:"David",
+        year:"2001",
+        price:200000
+    },
+    {
+        name:"Spongebob",
+        author:"Yanuar",
+        year:"2002",
+        price:310000
+    },
+    {
+        name:"Laskar Pelangi",
+        author:"Anton",
+        year:"2006",
+        price:310000
+    }
+]
 
-let amount_of_discount;
+
+// let {name :foo , price:bar}=book
+console.log(book)
+
+// console.log(foo,bar)
+
+var amount_of_discount;
 amount_of_discount= 0.5;
 
-let amount_of_tax;
+var amount_of_tax;
 amount_of_tax= 0.1;
 
-let price_book1=5000;
-let price_book2=10000;
 
-let discount= amount_discount(price_book1,price_book2,amount_of_discount)
+var buy_book=2
+var periode=12
 
-function amount_discount(price_book1,price_book2,amount_of_discount){
-    return(price_book1+price_book2)*amount_of_discount;
-}
+var purchasing = (list_book,buy_book,periode,amount_of_discount,amount_of_tax )=>{
+    var total=[] 
 
-let price_after_discount= after_discount(price_book1,price_book2,discount)
+    var price_book=0
+    for(let i=0; i<list_book.length;i++){
 
-function after_discount(price_book1,price_book2,amount_discount){
-    return (price_book1+price_book2)-amount_discount;
-}
-
-let amount_tax= tax(price_after_discount,amount_of_tax)
-
-function tax(price_after_discount,amount_of_tax){
-    return price_after_discount*amount_of_tax;
-}
-
-
-if (price_after_discount<10000) {
-    var price_after_tax= after_tax(price_after_discount,amount_tax)
-
-    function after_tax(price_after_discount,amount_tax){
-    return price_after_discount+amount_tax;
+        price_book += list_book[i].price*buy_book;       
     }
-    // console.log(book[3],price_after_tax)
-} else {
-    console.log (book[3],price_after_discount)
-}
-
-var amount_of_book=2
-
-for(let i=0; i<1; i++){
-    if (ammount_of_book=0 ){
-        console.log("Purchasing again")
-    } else {
-        console.log("Not Purchasing ")
+    const price_after_discount=price_book-(amount_of_discount*price_book);
+    const price_after_tax=price_after_discount+(amount_of_tax*price_after_discount);  
+    
+    console.log("Amount Price After Tax:",price_after_tax)
+    for(let i=0;i<periode;i++){
+        total.push({
+            terms:i+1,
+            amount:price_after_tax/periode
+        })
+        
     }
-
+    var store=[...list_book, ...total]
+    return store
 }
+var terms= purchasing(list_book,buy_book,periode,amount_of_discount,amount_of_tax)
 
-console.log(book)
-console.log(book[0],amount_of_discount)
-console.log("Ammount Discount ", discount)
-// console.log(book[1],price_after_discount)
-console.log(book[3],price_after_tax)
+console.log(terms)
 
 
