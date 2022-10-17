@@ -10,3 +10,11 @@
         ii. Return : ‘Bejo has 4 sport car’
 3. When to use array, tuple, and object?
 4. Create a function that accepts Custom Type of array of string and array of number.
+
+
+
+## Comment
+# tuples->  const myArguments1=[1, 'data','3','result']
+# array-> const myArguments1:(string|number)[]=[1, 'data','3','result']
+# Enum-> memungkinkan kita untuk mendeklarasikan satu set konstanta bernama yaitu kumpulan nilai terkait yang dapat berupa nilai numerik atau string
+# Literal->"Hello World" adalah string, tetapi string bukan "Hello World" di dalam sistem tipe.
