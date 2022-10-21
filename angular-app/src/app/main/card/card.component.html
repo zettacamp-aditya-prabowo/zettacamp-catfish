@@ -1,0 +1,25 @@
+
+    <label>Server Name: </label>
+    <label >    
+        <input type="text" class="form-control" (input)="onUpdateNameServer($event)" >
+    </label>
+    <label>
+        <input type="text" class="form-control" [(ngModel)]="server" >
+    </label>
+
+    <button [disabled]="!NewServer" (click)="Create()">Add Server</button>
+
+<div class="container-flex">
+    <div class="item-flex" *ngFor="let title of titles">
+        <h1 style="text-align: center;"> {{title}}</h1>
+        <p [ngStyle]="{backgroundColor:getColor()}" [ngClass]="{online:serverStatus=='online'}" *ngIf="serverCreated; else noServer">Server: {{server}} status: {{getServerStatus()}} </p>
+        <ng-template #noServer>
+            <p > {{serverCreationStatus}} </p>
+        </ng-template>
+        <hr>
+        <div class="bordering-image">
+            <img src="" alt="foto" width="300px">
+        </div>
+        <hr>
+    </div>
+</div>
