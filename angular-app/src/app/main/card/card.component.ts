@@ -15,7 +15,7 @@ export class CardComponent {
   server:string='anonymous';
   serverCreated:boolean=false;
 
-  titles =['Title 1', 'Title 2', 'Title 3', 'Title 4']
+  titles =['Title 1', 'Title 2', 'Title 3', 'Title 4','Title 5']
   
 
   constructor() {
