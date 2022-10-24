@@ -6,3 +6,8 @@
     justify-content: center;
     background-color: #2196F3;
 }
+
+p{
+    color: blue;
+    font-weight: bold;
+}

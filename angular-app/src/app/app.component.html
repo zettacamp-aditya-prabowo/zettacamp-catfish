@@ -1,4 +1,7 @@
-
 <div class="container">
-  <app-card-item *ngFor="let item of data" [cardItem]="item" (addItem)="addData($event)"></app-card-item>
+  <!-- <app-input-card [cardItem]="item" (addForm)="addForms($event)"></app-input-card> -->
+  <app-input-card ></app-input-card>
+</div>
+<div class="container">
+    <app-card-item *ngFor="let item of data" [cardItem]="item" (addItem)="addData($event)"></app-card-item>
 </div>

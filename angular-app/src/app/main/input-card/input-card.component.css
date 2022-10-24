@@ -1,0 +1,36 @@
+.container-form{
+    background-color: white;
+    padding: 12px;
+    border-radius: 8px;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    display: block;
+    width: 100;
+}
+
+h2 {
+    color: black;
+    text-align: center;
+}
+form {
+    margin: 1rem 0;
+    width: 600px;
+    display: block;
+}
+.form-input > label,
+.form-input > input {
+    display: block;
+    width: 90%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+.form-input > input {
+    margin-bottom: 1rem;
+}
+form > button {
+    background-color: green;
+    border-radius: 25px;
+    align-content: center;
+    padding: 10px 10px;
+}
+  
