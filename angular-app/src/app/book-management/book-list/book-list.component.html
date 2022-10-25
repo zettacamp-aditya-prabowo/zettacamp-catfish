@@ -1,0 +1,3 @@
+<div class="container-card">
+    <app-book-card *ngFor="let items of bookData" [cardItem]="items" (addItem)="addDataBooks($event)" (click)="addDataBooks($event)"></app-book-card>
+</div>
