@@ -1,0 +1,8 @@
+.container-card{
+    display: flex;
+    background-color: blue;
+    flex-wrap: wrap;
+    gap:20px;
+    margin-top: 10px;
+    justify-content: center;
+}

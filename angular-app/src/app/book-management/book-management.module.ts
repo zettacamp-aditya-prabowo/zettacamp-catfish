@@ -15,7 +15,8 @@ import { BookDetailComponent } from './book-detail/book-detail.component';
     BookDetailComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+  
   ],
   exports:[
     BookManagementComponent,

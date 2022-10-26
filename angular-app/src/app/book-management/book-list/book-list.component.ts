@@ -23,7 +23,7 @@ export class BookListComponent implements OnInit {
   }
 
   addDataBooks(event:any){
-
+    
   }
   
   

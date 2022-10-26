@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BookManagementComponent } from './book-management/book-management.component';
 import { BookManagementModule } from './book-management/book-management.module';
+import { MatSliderModule } from '@angular/material/slider';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { BookManagementModule } from './book-management/book-management.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BookManagementModule
+    BookManagementModule,
+    MatSliderModule
   ],
   providers: [],
   bootstrap: [AppComponent]
